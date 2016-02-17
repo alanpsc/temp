@@ -1,19 +1,15 @@
 #include <cstdio>
 int main() 
 {
-     unsigned m,n;
-     int sum=0;
-     scanf("%u %u",&m,&n);
-     if(n%2==1){
-        for( ;m<=n&&n<=300;m+=2){
-        sum+=m;
-        }
-    }
-    else if(n%2==0){
-    	for( ;m<n&&n<=300;m+=2){
-        sum+=m;
-        }
-	}
-     printf("%d",sum);
-     return 0;
+     unsigned number1,number2;
+     int sum = 0;
+     scanf("%u %u",&number1,&number2);
+     if(number1 % 2 == 0){
+     	number1 += 1;
+	 }
+     	for( ;number1<=number2;number1+=2) {
+     		sum += number1;
+     	}
+	printf("%d", sum);
+    return 0;
 }
