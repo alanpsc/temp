@@ -1,9 +1,13 @@
-#include <stdio.h>
-int main()
+#include <cstdio>
+int main() 
 {
-int a,b,c;
-scanf("%d%d%d",&a,&b,&c);
-if(a+b>c&&a+c>b&&b+c>a)printf("yes");
-else printf("no");
-return 0;
+       unsigned a, b, c;
+        scanf("%u %u %u",&a, &b, &c);
+	if(a + b > c && a + c > b && b + c > a) {
+		printf("YES");
+	}
+	else {
+	    printf("NO");
+	}
+    return 0;
 }
